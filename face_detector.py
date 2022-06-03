@@ -1,5 +1,3 @@
 import cv2
 
-
-print("Code conmpleted")
-print("Test for cv2 version")
+trained_faces_data = cv2.CascadeClassifier("/home/logan/github/Face_Detector/haarcascade_frontalface_default.xml")
