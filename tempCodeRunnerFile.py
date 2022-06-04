@@ -1,1 +1,1 @@
-print(face_coordinates)
+webcam = cv2.VideoCapture(0)
