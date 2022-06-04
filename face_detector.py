@@ -2,8 +2,8 @@
 import cv2
 import  random 
 
-# trained_faces_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
-trained_faces_data = cv2.CascadeClassifier("palm.xml")
+trained_faces_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+# trained_faces_data = cv2.CascadeClassifier("palm.xml")
 
 # #* Choose image to detect
 # img = cv2.imread("images/multiple.png")
