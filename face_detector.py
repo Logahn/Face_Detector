@@ -77,7 +77,7 @@ while show:
     cv2.imshow("Test data", frame)
     key = cv2.waitKey(1)
 
-    if key == 81 or key == 113:
+    if key == 27:
         show = False
 
 webcam.release()
