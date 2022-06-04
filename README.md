@@ -11,3 +11,6 @@ Open CV AI face detector
 ## Results
 
 ![](https://github.com/Logahn/Face_detector/blob/main/images/Palm_and_Face.png)
+
+
+ ![](https://github.com/Logahn/Face_detector/blob/main//images/Detector.gif?raw=true)
