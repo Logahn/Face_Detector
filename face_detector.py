@@ -2,7 +2,8 @@
 import cv2
 import  random 
 
-trained_faces_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+# trained_faces_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+trained_faces_data = cv2.CascadeClassifier("palm.xml")
 
 # #* Choose image to detect
 # img = cv2.imread("images/multiple.png")
@@ -26,9 +27,12 @@ trained_faces_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml"
 
 #* Capture video from webcam
 webcam = cv2.VideoCapture(0)
+#* Capture from video 
+#* webcam = cv2.VideoCapture("file_path")
 
+show = True
 #* Iterate forever over frames
-while True:
+while show:
 
     #* Read current frame
     successful_frame_read, frame = webcam.read() 
@@ -47,7 +51,12 @@ while True:
         cv2.rectangle(frame, (x, y),(x+w, y+h), color, 2)
 
     cv2.imshow("Test data", frame)
-    cv2.waitKey(2)
+    key = cv2.waitKey()
+
+    if key == 81 or key == 113:
+        show = False
+
+webcam.release()
 
 
 
