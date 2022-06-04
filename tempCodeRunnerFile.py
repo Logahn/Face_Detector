@@ -1,1 +1,1 @@
-webcam = cv2.VideoCapture(0)
+gray
