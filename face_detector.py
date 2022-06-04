@@ -51,7 +51,7 @@ while show:
         cv2.rectangle(frame, (x, y),(x+w, y+h), color, 2)
 
     cv2.imshow("Test data", frame)
-    key = cv2.waitKey()
+    key = cv2.waitKey(1)
 
     if key == 81 or key == 113:
         show = False
