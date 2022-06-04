@@ -3,7 +3,7 @@ import cv2
 import  random 
 
 trained_faces_data = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
-# trained_faces_data = cv2.CascadeClassifier("palm.xml")
+trained_palm_data = cv2.CascadeClassifier("palm.xml")
 
 # #* Choose image to detect
 # img = cv2.imread("images/multiple.png")
@@ -42,6 +42,7 @@ while show:
 
     # #* Detect faces
     face_coordinates = trained_faces_data.detectMultiScale(greyscaled_frame)
+    palm_coordinates = trained_palm_data.detectMultiScale(greyscaled_frame)
 
      #* Draw rectangles around faces
     colors = ((256,0,0), (0,256,0), (0,0,256))
@@ -49,6 +50,10 @@ while show:
     for (x, y, w, h) in face_coordinates:
         color = random.choice(colors)
         cv2.rectangle(frame, (x, y),(x+w, y+h), color, 2)
+
+    for (x, y, w, h) in palm_coordinates:
+        color = random.choice(colors)
+        cv2.rectangle(frame, (x, y), (x+w, y+h), color, 2)
 
     cv2.imshow("Test data", frame)
     key = cv2.waitKey(1)
