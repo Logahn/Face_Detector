@@ -38,7 +38,7 @@ webcam = cv2.VideoCapture(0)
 
 
 show = True
-#* Iterate forever over frames
+#* Iterate over frames while show is True. Web cam closes when ASCII code of 27 ie entered or ESC button is tapped.
 while show:
 
     #* Read current frame
@@ -78,7 +78,7 @@ while show:
     key = cv2.waitKey(1)
 
     if key == 27:
-        show = False
+        show = False.
 
 webcam.release()
 
