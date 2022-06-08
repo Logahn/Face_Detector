@@ -81,6 +81,7 @@ while show:
         show = False.
 
 webcam.release()
+#* Release all windows
 
 
 
