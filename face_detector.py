@@ -38,7 +38,7 @@ webcam = cv2.VideoCapture(0)
 
 
 show = True
-#* Iterate over frames while show is True. Web cam closes when ASCII code of 27 ie entered or ESC button is tapped.
+#* Iterate over frames while show is True. Web cam closes when ASCII code of 27 is entered or ESC button is tapped.
 while show:
 
     #* Read current frame
