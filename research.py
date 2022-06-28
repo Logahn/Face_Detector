@@ -28,7 +28,7 @@ for (x, y, w, h) in masked_coordinates1:
     
 for (x, y, w, h) in masked_coordinates2:
     color = random.choice(colors)
-    cv2.rectangle(img,2 (x, y),(x+w, y+h), color, 2)
+    cv2.rectangle(img2, (x, y),(x+w, y+h), color, 2)
     
 for (x, y, w, h) in masked_coordinates3:
     color = random.choice(colors)
