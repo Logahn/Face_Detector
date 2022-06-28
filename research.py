@@ -12,7 +12,7 @@ img1 = cv2.imread("images/data_test1.jpg")
 img2 = cv2.imread("images/data_test2.jpeg")
 img3 = cv2.imread("images/multiple_test.png")
 #* Convert the data to greyscale
-greyscaled_img1 = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+greyscaled_img1 = cv2.cvtColor(img1, cv2.COLOR_BGR2GRAY)
 greyscaled_img2 = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 greyscaled_img3 = cv2.cvtColor(img3, cv2.COLOR_BGR2GRAY)
  #* Detect faces
